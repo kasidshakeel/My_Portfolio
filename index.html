@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasid Shakeel | Full-Stack Developer & Software Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        html.lenis, html.lenis body {
+            height: auto;
+        }
+        .lenis.lenis-smooth {
+            scroll-behavior: auto !important;
+        }
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overflow: auto;
+        }
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+        .lenis.lenis-scrolling iframe {
+            pointer-events: none;
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .project-card,
+        .skill-card,
+        .timeline-item {
+            will-change: transform, opacity;
+        }
+
+        /* Custom subtle scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #374151;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#fff]/80 backdrop-blur-md border-b border-gray-800/50 px-6 lg:px-16 py-4 flex justify-between items-center">
+        <a href="#home" class="font-heading text-xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+            KASID SHAKEEL
+        </a>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-800">
+            <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
+            <a href="#skills" class="hover:text-blue-400 transition-colors duration-300">Skills</a>
+            <a href="#experience" class="hover:text-blue-400 transition-colors duration-300">Experience</a>
+            <a href="#projects" class="hover:text-blue-400 transition-colors duration-300">Projects</a>
+            <a href="#certifications" class="hover:text-blue-400 transition-colors duration-300">Credentials</a>
+        </div>
+        <a href="mailto:kasidshakeel@gmail.com" class="text-xs lg:text-sm bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white px-4 py-2 rounded-full font-medium transition-all duration-300 shadow-lg shadow-indigo-500/10">
+            Get In Touch
+        </a>
+    </nav>
+
+    <section id="hero" class="min-h-screen flex flex-col justify-center relative px-6 lg:px-16 pt-20 overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -z-10 animate-pulse" style="animation-delay: 2s;"></div>
+
+        <div id="home" class="max-w-5xl">
+            <h2 class="hero-reveal text-sm lg:text-base font-heading font-semibold text-blue-400 tracking-widest uppercase mb-4">
+                Full-Stack Developer & Software Engineer
+            </h2>
+            <h1 class="hero-reveal text-5xl lg:text-8xl font-heading font-bold tracking-tight mb-6 leading-tight">
+                Building scalable web <br>
+                & <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400">desktop systems</span>.
+            </h1>
+            <p class="hero-reveal text-gray-400 text-lg lg:text-xl max-w-3xl font-light mb-10 leading-relaxed">
+                Hi, I'm <span class="text-white font-medium">Kasid Shakeel</span>. I bridge the gap between powerful backend systems and elegant user interfaces. From creating core government research software architectures  to launching automated ecommerce builds, I engineer performance.
+            </p>
+            
+            <div class="hero-reveal flex flex-wrap gap-4 items-center">
+                <a href="#projects" class="bg-white hover:bg-gray-100 text-gray-900 px-6 py-3.5 rounded-lg font-medium transition-all duration-300 transform hover:-translate-y-0.5 font-heading">
+                    View My Work
+                </a>
+                <div class="flex items-center space-x-4 ml-2">
+                    <a href="https://github.com/kasidshakeel" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 border border-gray-800 rounded-lg hover:border-gray-700 bg-gray-900/40">
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/kasid-shakeel-2333b31b0" target="_blank" class="text-gray-400 hover:text-white transition-colors p-2 border border-gray-800 rounded-lg hover:border-gray-700 bg-gray-900/40">
+                        LinkedIn
+                    </a>
+                    <a 
+                    href="https://drive.google.com/file/d/1peSDaw24iNuxuDhvGLg7L1iBzQp8EHIH/view?usp=drive_link"
+                    download
+                    class="text-gray-400 hover:text-white transition-colors p-2 border border-gray-800 rounded-lg hover:border-gray-700 bg-gray-900/40"
+                    >
+                        Download CV / Resume
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center hidden lg:block">
+            <span class="text-xs text-gray-500 uppercase tracking-widest font-heading block mb-2">Scroll Down</span>
+            <div class="w-[1px] h-12 bg-gradient-to-b from-blue-500 to-transparent mx-auto"></div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 lg:px-16 border-t border-gray-900 bg-[#090d15]/50">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div class="lg:col-span-4 sticky top-28">
+                <!-- <h3 class="text-xs font-heading font-semibold text-indigo-400 tracking-widest uppercase mb-2">01 // Profile</h3> -->
+                <h2 class="text-3xl lg:text-4xl font-heading font-bold text-white tracking-tight">Professional Summary</h2>
+            </div>
+            <div class="lg:col-span-8 space-y-6 text-gray-400 text-base lg:text-lg leading-relaxed font-light">
+                <p class="reveal-text">
+                    I am a versatile <strong class="text-white font-medium">Full-stack PHP Web Developer</strong> with extensive practical execution utilizing MVC structures via architectures like <strong class="text-white font-medium">CodeIgniter and Laravel</strong> to craft fluid custom web apps and high-volume e-commerce layers. 
+                </p>
+                <p class="reveal-text">
+                    Beyond web ecosystems, my engineering horizons encompass <strong class="text-white font-medium">Java and Python Application Design</strong>, mapping secure and production-grade software setups using GUI tools like Java Swing, Tkinter, and wxPython.
+                </p>
+                <p class="reveal-text">
+                    Currently, I contribute key code to complex technical pipelines at <strong class="text-white font-medium text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">CSIR-NBRI (National Botanical Research Institute)</strong>, creating structural frameworks used directly within official government-backed operational tools.
+                </p>
+                <div>
+                    <span class="text-xs font-heading font-medium text-gray-500 uppercase">B.Tech — CSE</span>
+                    <h5 class="text-white font-heading font-bold text-lg mt-1">Integral University</h5>
+                    <p class="text-xs text-gray-400 mt-1">Graduated First Division (2023) </p>
+                </div>
+                <div>
+                    <span class="text-xs font-heading font-medium text-gray-500 uppercase">Diploma — CSE</span>
+                    <h5 class="text-white font-heading font-bold text-lg mt-1">Integral University</h5>
+                    <p class="text-xs text-gray-400 mt-1">Graduated First Division (2020)</p>
+                </div>
+                <div>
+                    <span class="text-xs font-heading font-medium text-gray-500 uppercase">High School</span>
+                    <h5 class="text-white font-heading font-bold text-lg mt-1">Shibli National Girls High School</h5>
+                    <p class="text-xs text-gray-400 mt-1">India-wide 26th percentile rank validation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 lg:px-16 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <!-- <h3 class="text-xs font-heading font-semibold text-blue-400 tracking-widest uppercase mb-2">02 // Frameworks & Tools</h3> -->
+                <h2 class="text-3xl lg:text-5xl font-heading font-bold text-white tracking-tight">Technical Skills</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="skill-card p-6 rounded-xl border border-gray-800/60 bg-gray-900/20 hover:border-blue-500/40 transition-colors duration-300">
+                    <h4 class="font-heading font-semibold text-white text-lg mb-4 text-blue-400">Languages</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> PHP </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Java </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Python </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> SQL </li>
+                    </ul>
+                </div>
+                <div class="skill-card p-6 rounded-xl border border-gray-800/60 bg-gray-900/20 hover:border-indigo-500/40 transition-colors duration-300">
+                    <h4 class="font-heading font-semibold text-white text-lg mb-4 text-indigo-400">Frameworks</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></span> Laravel </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></span> CodeIgniter </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></span> Hibernate </li>
+                    </ul>
+                </div>
+                <div class="skill-card p-6 rounded-xl border border-gray-800/60 bg-gray-900/20 hover:border-purple-500/40 transition-colors duration-300">
+                    <h4 class="font-heading font-semibold text-white text-lg mb-4 text-purple-400">Web / UI Stack</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></span> HTML5 & CSS3 </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></span> Bootstrap </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></span> JavaScript & jQuery </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></span> GSAP & Lenis </li>
+                    </ul>
+                </div>
+                <div class="skill-card p-6 rounded-xl border border-gray-800/60 bg-gray-900/20 hover:border-pink-500/40 transition-colors duration-300">
+                    <h4 class="font-heading font-semibold text-white text-lg mb-4 text-pink-400">Data & Concepts</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span> MySQL / SQL Server </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span> Git & Linux Shell </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span> MVC Architecture </li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span> REST APIs & Auth </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 px-6 lg:px-16 border-t border-gray-900 bg-[#090d15]/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <!-- <h3 class="text-xs font-heading font-semibold text-indigo-400 tracking-widest uppercase mb-2">03 // Track Record</h3> -->
+                <h2 class="text-3xl lg:text-5xl font-heading font-bold text-white tracking-tight">Professional Experience</h2>
+            </div>
+
+            <div class="relative border-l border-gray-800 ml-4 space-y-12">
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-500 shadow-md shadow-blue-500/50"></div>
+                    <span class="text-xs font-heading font-semibold text-blue-400 bg-blue-950/40 border border-blue-900/50 px-2.5 py-1 rounded-full">
+                        Sep 2024 - Present 
+                    </span>
+                    <h3 class="text-xl font-heading font-bold text-white mt-3">Project Associate - I (Software Developer)</h3>
+                    <p class="text-sm text-gray-400 font-medium mb-4">CSIR - National Botanical Research Institute (NBRI)</p>
+                    <ul class="text-gray-400 space-y-2 text-sm max-w-3xl font-light list-disc list-inside">
+                        <li>Engineered custom technical workflows and application units for physical textile purity metrics testing.</li>
+                        <li>Configured intuitive dynamic user front-ends paired cleanly with back-end database systems.</li>
+                        <li>Compiled structured structural architecture documents and operational developer system design logs.</li>
+                        <li>Engineered software assets that successfully achieved official intellectual copyright certification protection.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item relative pl-8">
+                    <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-indigo-500"></div>
+                    <span class="text-xs font-heading font-semibold text-indigo-400 bg-indigo-950/40 border border-indigo-900/50 px-2.5 py-1 rounded-full">
+                        Mar 2023 - Nov 2023
+                    </span>
+                    <h3 class="text-xl font-heading font-bold text-white mt-3">Senior Business Development Associate</h3>
+                    <p class="text-sm text-gray-400 font-medium mb-4">Certybox Learners (EdTech)</p>
+                    <ul class="text-gray-400 space-y-2 text-sm max-w-3xl font-light list-disc list-inside">
+                        <li>Managed consultative tech course analysis and technical educational roadmap guidance operations.</li>
+                        <li>Maintained exceptional onboarding conversion tracks; formally recognized with the "Rising Star" honor.</li>
+                        <li>Refined client requirement analytics protocols and key dynamic presentation methods.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 lg:px-16 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 flex flex-col md:flex-row md:justify-between md:items-end">
+                <div>
+                    <!-- <h3 class="text-xs font-heading font-semibold text-purple-400 tracking-widest uppercase mb-2">04 // Engineering Portfolio</h3> -->
+                    <h2 class="text-3xl lg:text-5xl font-heading font-bold text-white tracking-tight">Featured Projects</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="project-card flex flex-col justify-between p-6 border border-gray-800 rounded-xl bg-gray-900/10 hover:bg-gray-900/30 transition-all duration-300">
+                    <div>
+                        <span class="text-xs font-heading font-semibold text-blue-400 tracking-widest uppercase">CodeIgniter MVC </span>
+                        <h3 class="text-xl font-heading font-bold text-white mt-2 mb-3">E-Commerce Web Platform </h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6">
+                            Constructed an end-to-end e-commerce store mapping strict security checks, catalog panels, user carts, and database orders. Includes a robust management module for categories.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800/60">
+                        <span class="text-xs bg-gray-900 px-2.5 py-1 rounded text-gray-400 border border-gray-800">CodeIgniter</span>
+                        <span class="text-xs bg-gray-900 px-2.5 py-1 rounded text-gray-400 border border-gray-800">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card flex flex-col justify-between p-6 border border-gray-800 rounded-xl bg-gray-900/10 hover:bg-gray-900/30 transition-all duration-300">
+                    <div>
+                        <span class="text-xs font-heading font-semibold text-indigo-400 tracking-widest uppercase">Vanilla PHP</span>
+                        <h3 class="text-xl font-heading font-bold text-white mt-2 mb-3">Car Rental Logistics Portal</h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6">
+                            Engineered a multi-tier reservation pipeline separating individual retail clients from commercial automotive service agencies. Integrated role-based workflows and global tracking panels.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800/60">
+                        <span class="text-xs bg-gray-900 px-2.5 py-1 rounded text-gray-400 border border-gray-800">PHP Core</span>
+                        <span class="text-xs bg-gray-900 px-2.5 py-1 rounded text-gray-400 border border-gray-800">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="project-card flex flex-col justify-between p-6 border border-gray-800 rounded-xl bg-gray-900/10 hover:bg-gray-900/30 transition-all duration-300">
+                    <div>
+                        <span class="text-xs font-heading font-semibold text-purple-400 tracking-widest uppercase">Java Desktop UI </span>
+                        <h3 class="text-xl font-heading font-bold text-white mt-2 mb-3">School Management Desktop Suite </h3>
+                        <p class="text-gray-400 text-sm font-light leading-relaxed mb-6">
+                            Developed a secure standalone system monitoring student directories, personnel financial payroll schedules, and institutional fee tracking histories. Optimized for low-latency queries.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800/60">
+                        <span class="text-xs bg-gray-900 px-2.5 py-1 rounded text-gray-400 border border-gray-800">Java Swing</span>
+                        <span class="text-xs bg-gray-900 px-2.5 py-1 rounded text-gray-400 border border-gray-800">SQL Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="py-24 px-6 lg:px-16 border-t border-gray-900 bg-[#090d15]/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <!-- <h3 class="text-xs font-heading font-semibold text-pink-400 tracking-widest uppercase mb-2">05 // Validated Excellence</h3> -->
+                <h2 class="text-3xl lg:text-5xl font-heading font-bold text-white tracking-tight">Credentials & Key Milestones</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-5 border border-gray-800/40 rounded-xl bg-gray-900/10 flex items-start space-x-4">
+                    <div class="p-2 bg-blue-950/40 border border-blue-900/30 rounded-lg text-blue-400 font-heading font-bold text-xs uppercase tracking-wider">Govt</div>
+                    <div>
+                        <h4 class="text-white font-heading font-semibold text-base">Copyright Certification — Vastra Sattva R&D Tool </h4>
+                        <p class="text-xs text-gray-500 mt-1">Granted by Copyright Office, Govt. of India for Genetic Purity Software </p>
+                    </div>
+                </div>
+
+                <div class="p-5 border border-gray-800/40 rounded-xl bg-gray-900/10 flex items-start space-x-4">
+                    <div class="p-2 bg-indigo-950/40 border border-indigo-900/30 rounded-lg text-indigo-400 font-heading font-bold text-xs uppercase tracking-wider">CSIR</div>
+                    <div>
+                        <h4 class="text-white font-heading font-semibold text-base">Appointed Resource Person </h4>
+                        <p class="text-xs text-gray-500 mt-1">Led 21-day Technical Training inside Advanced Bioinformatics Course at CSIR-NBRI.</p>
+                    </div>
+                </div>
+
+                <div class="p-5 border border-gray-800/40 rounded-xl bg-gray-900/10 flex items-start space-x-4">
+                    <div class="p-2 bg-purple-950/40 border border-purple-900/30 rounded-lg text-purple-400 font-heading font-bold text-xs uppercase tracking-wider">IIT</div>
+                    <div>
+                        <h4 class="text-white font-heading font-semibold text-base">LibreOffice Suite Specialist Certification </h4>
+                        <p class="text-xs text-gray-500 mt-1">Conducted and certified under the Spoken Tutorial Project via IIT Bombay.</p>
+                    </div>
+                </div>
+
+                <div class="p-5 border border-gray-800/40 rounded-xl bg-gray-900/10 flex items-start space-x-4">
+                    <div class="p-2 bg-pink-950/40 border border-pink-900/30 rounded-lg text-pink-400 font-heading font-bold text-xs uppercase tracking-wider">Web</div>
+                    <div>
+                        <h4 class="text-white font-heading font-semibold text-base">PHP Web Development Masterclass </h4>
+                        <p class="text-xs text-gray-500 mt-1">Verified Professional Web Certification via YouAccel Network.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 lg:px-16 border-t border-gray-900 bg-[#0b0f19] text-center md:flex md:justify-between md:items-center text-sm text-gray-500">
+        <p class="font-heading font-medium text-gray-400 mb-4 md:mb-0">KASID SHAKEEL </p>
+        <div class="flex justify-center space-x-6 text-xs mb-4 md:mb-0">
+            <a href="mailto:kasidshakeel@gmail.com" class="hover:text-white transition-colors">kasidshakeel@gmail.com</a>
+            <span>•</span>
+            <span class="text-gray-500">+91 8299533795</span>
+        </div>
+        <p class="text-xs">&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+<script>
+    // ================================
+    // 1. GSAP Plugins Registration
+    // ================================
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ================================
+    // 2. Initialize Lenis Smooth Scroll
+    // ================================
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: "vertical",
+        gestureDirection: "vertical",
+        smoothWheel: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+    });
+
+    // ================================
+    // 3. Sync Lenis with GSAP
+    // ================================
+    lenis.on("scroll", ScrollTrigger.update);
+
+    gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+    });
+
+    gsap.ticker.lagSmoothing(0);
+
+    // ================================
+    // 4. DOM Loaded Animations
+    // ================================
+    window.addEventListener("DOMContentLoaded", () => {
+
+        // =========================================
+        // HERO SECTION INTRO ANIMATION
+        // =========================================
+        const heroTl = gsap.timeline();
+
+        heroTl.from(".hero-reveal", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power4.out",
+            delay: 0.2
+        });
+
+        // =========================================
+        // SMOOTH SCROLL NAVIGATION
+        // =========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener("click", function (e) {
+
+                e.preventDefault();
+
+                const targetId = this.getAttribute("href");
+
+                if (targetId === "#") return;
+
+                const targetEl = document.querySelector(targetId);
+
+                if (targetEl) {
+
+                    lenis.scrollTo(targetEl, {
+                        offset: -80,
+                        duration: 1.2
+                    });
+
+                }
+
+            });
+
+        });
+
+        // =========================================
+        // ABOUT SECTION TEXT REVEAL
+        // =========================================
+        gsap.utils.toArray(".reveal-text").forEach((text) => {
+
+            gsap.from(text, {
+                scrollTrigger: {
+                    trigger: text,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+
+                y: 30,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power3.out"
+            });
+
+        });
+
+        // =========================================
+        // SKILLS CARDS ANIMATION
+        // =========================================
+        gsap.from(".skill-card", {
+
+            scrollTrigger: {
+                trigger: "#skills",
+                start: "top 75%",
+                toggleActions: "play none none none"
+            },
+
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out"
+
+        });
+
+        // =========================================
+        // EXPERIENCE TIMELINE ANIMATION
+        // =========================================
+        gsap.utils.toArray(".timeline-item").forEach((item) => {
+
+            gsap.from(item, {
+
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                },
+
+                x: -20,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power3.out"
+
+            });
+
+        });
+
+        // =========================================
+        // FEATURED PROJECTS ANIMATION
+        // =========================================
+        gsap.from(".project-card", {
+
+            scrollTrigger: {
+                trigger: "#projects",
+                start: "top 80%",
+                toggleActions: "play none none none"
+            },
+
+            y: 60,
+            opacity: 0,
+            duration: .5,
+            stagger: 0.2,
+            ease: "power4.out",
+            clearProps: "all"
+
+        });
+
+        // =========================================
+        // CERTIFICATION CARDS ANIMATION
+        // =========================================
+        gsap.from("#certifications .p-5", {
+
+            scrollTrigger: {
+                trigger: "#certifications",
+                start: "top 80%",
+                toggleActions: "play none none none"
+            },
+
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power3.out"
+
+        });
+
+        // =========================================
+        // REFRESH SCROLLTRIGGER
+        // =========================================
+        ScrollTrigger.refresh();
+
+    });
+</script>
+</body>
+</html>
